@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Repositories\Gigs;
+namespace App\Repositories\Venues;
 
 /**
- * Interface GigsInterface
- * @package App\Repositories\Gigs
+ * Interface VenuesInterface
+ * @package App\Repositories\Venues
  *
- * Gigs interface for the gigs repository
+ * Venues interface for the Venues repository
  */
-interface GigsInterface
+interface VenuesInterface
 {
     public function all();
     public function store($id);

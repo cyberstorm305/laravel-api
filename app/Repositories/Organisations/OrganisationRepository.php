@@ -1,13 +1,14 @@
 <?php
-namespace App\Repositories\Gigs;
+
+namespace App\Repositories\Organisations;
 
 /**
- * Class GigsRepository
- * @package App\Repositories\Gigs
+ * Class OrganisationRepository
+ * @package App\Repositories\Organisations
  *
- * Gigs Repository, this is the business logic layer between the ORM and the Controller
+ * Organisation Repository, this is the business logic layer between the ORM and the Controller
  */
-class GigsRepository implements GigsInterface
+class OrganisationRepository implements OrganisationInterface
 {
 
     public function all()

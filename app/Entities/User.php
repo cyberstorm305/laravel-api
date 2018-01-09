@@ -1,13 +1,20 @@
 <?php
 
-namespace App;
+namespace App\Entities;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
+/**
+ * Class User
+ * @package App\Entities
+ *
+ * Users ORM using eloquent
+ */
 class User extends Authenticatable
 {
-    use Notifiable;
+    use HasApiTokens, Notifiable;
+
 
     /**
      * The attributes that are mass assignable.
@@ -27,3 +34,5 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 }
+
+

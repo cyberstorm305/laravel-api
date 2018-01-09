@@ -6,25 +6,23 @@ use \Illuminate\Database\Eloquent\Model;
 use \Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
- * Class Gigs
- * @package App\Entities;
+ * Class Venue
+ * @package App\Entities
  *
- * Gigs ORM using eloquent
+ * Venue ORM using eloquent
  */
-
-
-class Gigs extends Model
+class Venue extends Model
 {
     use SoftDeletes;
 
-    protected $table = 'gigs';
+    protected $table = 'venue';
 
     public $timestamps = true;
 
     protected $primaryKey = "id";
 
     protected $fillable = [
-        'venue_id', 'organisation_id', 'title', 'from', 'to'
+        'name', 'address'
     ];
     protected $guarded = array('id');
 
